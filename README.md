@@ -33,6 +33,8 @@ Instructions:
     > but they are in principle not solvable with the transformer architecture.
 
 4. Modify this file to include an image demonstrating that your testcases are passing on github actions.
+<img width="1111" height="393" alt="Screenshot 2026-11-20 at 12 16 26 PM" src="https://github.com/user-attachments/assets/ae469ef7-e36a-4e21-8f93-34bba7a5853e" />
+
 
 5. Upload the url to your completed repo to sakai.
 
