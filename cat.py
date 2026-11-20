@@ -4,8 +4,14 @@ This program prints stdin to the screen.
 import sys
 
 def cat(file):
-    data = file.read()
-    sys.stdout.buffer.write(data)
+    # Read in chunks to keep memory usage O(1)
+    chunk_size = 8192
+    while True:
+        chunk = file.read(chunk_size)
+        if not chunk:
+            break
+        sys.stdout.buffer.write(chunk)
+    sys.stdout.buffer.flush()
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
